@@ -4,4 +4,6 @@
 
 .navActive {
     color: lightslategray;
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 113, 34);
   }
