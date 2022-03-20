@@ -12,11 +12,11 @@ function Navigation(props) {
     return (
         <header>
             <nav className="bg-white text-black">
-                <ul className="flex flex-wrap justify-between align-center list-none pt-6 pb-6 px-24 font-bold text-2xl">
-                    <h1 className="text-4xl font-bold">
-                        <a data-testid="link" href="/">Luc Nguyen</a>
+                <ul className="flex flex-wrap justify-between align-center list-none mt-6 pb-6 mx-24 font-bold text-4xl font-shalimar">
+                    <h1 className="text-5xl font-bold font-windsong">
+                        <a data-testid="link" href="/" className="hover:opacity-60">Luc Nguyen</a>
                     </h1>
-                    <li className="pl-80">
+                    <li className="ml-80">
                         <a data-testid="about" href="#about" onClick={() => setContactSelected(false)} className="hover:text-orange-500">About Me</a>
                     </li>
                     <li className={`hover:text-orange-500 ${contactSelected && 'navActive'}`}>

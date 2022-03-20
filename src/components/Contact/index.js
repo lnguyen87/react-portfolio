@@ -38,27 +38,27 @@ function ContactForm() {
 
   return (
     <section className="flex justify-center">
-      <h1 data-testid="h1tag" className="pt-20 text-5xl font-bold text-white">Contact me</h1>
+      <h1 data-testid="h1tag" className="mt-20 text-5xl font-bold text-white">Contact me</h1>
 
-      <form id="contact-form" onSubmit={handleSubmit} className="justify-center pt-48 pr-24 font-bold text-2xl">
-        <div className="pt-2">
+      <form id="contact-form" onSubmit={handleSubmit} className="justify-center mt-48 mr-24 font-bold text-2xl">
+        <div className="mt-2">
           <label htmlFor="name">Name: </label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
 
-        <div className="pt-2">
+        <div className="mt-2">
           <label htmlFor="email">Email address: </label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
 
-        <div className="pt-2">
+        <div className="mt-2">
           <label htmlFor="message">Message: </label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
 
         {errorMessage && (
           <div>
-            <p className="error-text pt-4 text-red-500 first-letter:uppercase text-lg text-center">{errorMessage}</p>
+            <p className="error-text mt-4 text-red-500 first-letter:uppercase text-lg text-center">{errorMessage}</p>
           </div>
         )}
         <button data-testid="button" type="submit" className="shadow-xl mt-4 bg-orange-600 border-2 hover:bg-orange-700 hover:text-gray-100 border-black px-2 font-bold text-white">Submit</button>

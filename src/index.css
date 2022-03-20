@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .navActive {
-    color: gray;
+    color: lightslategray;
   }

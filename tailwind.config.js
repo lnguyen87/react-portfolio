@@ -30,7 +30,11 @@ module.exports = {
       },
       modal: {
         'display': 'none'
-      }
+      },
+      fontFamily: {
+        'shalimar': ['Shalimar', 'cursive'],
+        'windsong': ['WindSong', 'cursive'],
+      },
     },
   },
   plugins: [],
