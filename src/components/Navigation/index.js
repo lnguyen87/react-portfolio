@@ -19,12 +19,12 @@ function Navigation(props) {
                     <li className="pl-80">
                         <a data-testid="about" href="#about" onClick={() => setContactSelected(false)} className="hover:text-orange-500">About Me</a>
                     </li>
-                    <li className={`${contactSelected && 'navActive'}`}>
+                    <li className={`hover:text-orange-500 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
                     {categories.map((category) => (
                         <li
-                        className={`mx-1 ${
+                        className={`mx-1 hover:text-orange-500 ${
                             currentCategory.name === category.name && !contactSelected && 'navActive'
                             }`}
                         key={category.name}

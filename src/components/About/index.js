@@ -5,7 +5,7 @@ function About() {
         <section className="flex justify-center">
         <div className="text-2xl w-1/2 pt-10 pl-10">
             <h1 id="about" className="text-5xl pt-24">Hi, I'm Luc Nguyen.</h1>
-            <p className="pt-6">
+            <p className="pt-12">
                 I am a well-developed professional with extensive Operations Management and Organizational Leadership experience. 
             </p>
             <p className="pt-6">

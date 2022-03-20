@@ -58,7 +58,7 @@ function ContactForm() {
 
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text pt-4 text-red-500 first-letter:uppercase text-lg text-center">{errorMessage}</p>
           </div>
         )}
         <button data-testid="button" type="submit" className="shadow-xl mt-4 bg-orange-600 border-2 hover:bg-orange-700 hover:text-gray-100 border-black px-2 font-bold text-white">Submit</button>
