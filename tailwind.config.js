@@ -8,6 +8,9 @@ module.exports = {
         'spin-slow': 'spin 2s linear infinite',
         'pulse-slow': 'pulse 2s ease-in-out infinite',
       },
+      padding: {
+        '28rem' : '28rem',
+      },
       width: {
         '45': '45%',
         '50rem': '50rem',
