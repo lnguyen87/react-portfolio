@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.navActive {
+    color: gray;
+  }
