@@ -3,12 +3,13 @@ import ContactForm from './components/Contact';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Footer from './components/Footer';
+import Project from './components/Project';
 
 
 function App() {
   const [categories] = useState([
     {
-      name: 'projects',
+      name: 'project',
       description: 'Collection of GitHub projects',
     },
     {
@@ -35,7 +36,8 @@ function App() {
 
         {!contactSelected ? (
           <>
-            <About currentCategory={currentCategory}></About>
+            <Project currentCategory={currentCategory}></Project>
+            <About></About>
           </>
         ) : (
             <ContactForm></ContactForm>

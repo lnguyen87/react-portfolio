@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Navigation(props) {
     const {
@@ -8,6 +9,10 @@ function Navigation(props) {
         currentCategory,
         setContactSelected,
     } = props;
+
+    useEffect(() => {
+    document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
 
     return (
         <header>
@@ -27,14 +32,15 @@ function Navigation(props) {
                         className={`mx-1 hover:text-orange-500 ${
                             currentCategory.name === category.name && !contactSelected && 'navActive'
                             }`}
-                        key={category.name}
+                            key={category.name}
                         >
                         <span
                             onClick={() => {
-                            setCurrentCategory(category);
-                            setContactSelected(false);
+                                setCurrentCategory(category);
+                                setContactSelected(false);
                             }}
                         >
+                            {capitalizeFirstLetter(category.name)}
                         </span>
                         </li>
                     ))}
