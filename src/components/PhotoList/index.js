@@ -50,12 +50,12 @@ const PhotoList = ({ category }) => {
         {isModalOpen && (
           <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
         )}
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           {currentPhotos.map((image, i) => (
             <img
               src={require(`../../assets/images/${category}/${i}.jpg`)}
               alt={image.name}
-              className="h-32 w-auto mb-6 mr-6 hover:opacity-70 hover:h-36"
+              className="h-48 w-auto mb-6 mr-6 hover:opacity-70 hover:h-52"
               onClick={() => toggleModal(image, i)}
               key={image.name}
             />

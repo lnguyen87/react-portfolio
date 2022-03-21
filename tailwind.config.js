@@ -17,6 +17,12 @@ module.exports = {
         '32rem': '32rem',
         '72rem': '72rem',
       },
+      height: {
+        '45': '45%',
+        '50rem': '50rem',
+        '32rem': '32rem',
+        '72rem': '72rem',
+      },
       spacing: {
         '65rem': '65rem',
       },
@@ -35,6 +41,9 @@ module.exports = {
         'shalimar': ['Shalimar', 'cursive'],
         'windsong': ['WindSong', 'cursive'],
       },
+      zIndex: {
+        '1': '1',
+      }
     },
   },
   plugins: [],

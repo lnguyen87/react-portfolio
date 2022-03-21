@@ -14,7 +14,7 @@ function App() {
     },
     {
       name: 'resume',
-      description: 'Most recent resume',
+      description: 'Click to download my resume',
     },
   ]);
 
@@ -23,7 +23,7 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div className="bg-gray-300 text-black h-screen font-sans">
+    <div className="bg-gray-300 text-black h-full font-sans">
       <Navigation
       categories={categories}
       setCurrentCategory={setCurrentCategory}
@@ -32,7 +32,6 @@ function App() {
       setContactSelected={setContactSelected}
       ></Navigation>
       <main>
-        <Footer></Footer>
 
         {!contactSelected ? (
           <>
@@ -40,8 +39,9 @@ function App() {
             <About></About>
           </>
         ) : (
-            <ContactForm></ContactForm>
-        )}
+          <ContactForm></ContactForm>
+          )}
+          <Footer></Footer>
       </main>
     </div>
   );
