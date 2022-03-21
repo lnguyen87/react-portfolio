@@ -15,7 +15,7 @@ function App() {
     },
     {
       name: 'resume',
-      description: 'Click to download my resume',
+      description: 'Click to here download my resume',
     },
   ]);
 
