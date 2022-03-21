@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import About from './components/About';
 import Footer from './components/Footer';
 import Project from './components/Project';
+import Resume from './components/Resume';
 
 
 function App() {
