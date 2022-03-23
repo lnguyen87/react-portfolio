@@ -21,6 +21,6 @@ const Modal = ({ onClose, currentProject }) => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Modal;
