@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     // React.createElement
     return(
-        <div className=" pt-24 pb-6 px-64 inset-x-0 bottom-0">
+        <div className="xs:mt-8 pb-6 xs:relative md:absolute inset-x-0 bottom-0">
             <div className="flex flex-wrap justify-center">
             <a href="mailto:luc_nguyen@outlook.com"><img alt="email icon" className="hover:animate-bounce hover:opacity-70 mr-24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACm0lEQVRoge3YTYiNURgH8N/4mEy+Q2IjRmSBDVEioqgpFkJZMKtZMrvZWrIcRZliMXZsKKKokY+iJhtCiIZS8pWPfGTMa3HONbfb3Jn7zr1z7x29/3rq3nOe55z//z3nfd5zHjJkyJAhQ4YMGgp+d2BxjbikxUscQ5LfOB0TsBJ9sbOerS9ynRC5/0MrzqMJC9BbB2SLWW/k2BQ5t+YLaY9O9zAfU3GhDkgX2pW4AnNwK7a1DyUkwQuswEQcrQPyOTuFSViKp3ntRYUk+Igtsa8Nv2sooB+HIpcNeFfQP6yQJJJvi/3b8bkGIr5hZ+RwEL+G8BlRSM46hdS8Cq+qKOIN1sS5j2CgiF/JQhKcwxQsxP0qiHiARWhE9wi+qYQkuIN5mIZLYyjiGmZiNnpK8E8tJMFzLBcy2okxEHEak7EEj0uMGZWQBB+wKcYdxp8KCBgQ3gNYj7cpYkctJMFP7I+xu/G9DBHljlWWkMKnuC7lU8zZe2yMY4x2dcsWkrMzwr5ejEcp4p5hmfC1PlnG/BUTkuA6Zik909zBXOHcdLnMudsJx+BKIDfoJ+EU0D2M7zlsFbZVUqH5/6GcFclPmT1Ya/CSlv81HhAOoQ1YjRvqZGsVS5nfsCu278UP4Yx0ILbtwJfoW/OX/UckCXvi//z+/kgMNkfLke0fYqw9BcKrIiTNU+wSts5EHB/Gr+ofxCdojuS6Soy5ZfA2N5LlhDfHucZESF0fGktNv7mU2YibaCkxbjTYhtuYIaTys2mCS71YvR7Gr9JWsYtVsZRZTctP5fsMndHGVfGhI3JJVXzILwd11lBAoaUqB901WKC7WAfkC+2qkASKFuj+m5LpuC9iT4pCvgpprkVYvvGAFjwUuGfIkCFDhgwZ4C+TfpaAHpO6cwAAAABJRU5ErkJggg=="/></a>
       

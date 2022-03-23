@@ -65,7 +65,7 @@ const ProjectList = () => {
     };
   
     return (
-      <section className="mt-10 ml-24 text-black">
+      <section className="mt-10 md:ml-24 text-black">
             <h1 data-testid="h1tag" className="text-4xl mb-2 font-bold decoration-orange-400 underline">{capitalizeFirstLetter(category.name)}</h1>
             <p className="mb-2 text-2xl">{category.description}</p>
       
@@ -73,12 +73,12 @@ const ProjectList = () => {
         {isModalOpen && (
           <Modal onClose={toggleModal} currentProject={currentProject} />
         )}
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-row flex-wrap justify-center mt-4">
           {projects.map((project, i) => (
             <img
               src={require(`../../assets/images/${project.category}/${i}.jpg`)}
               alt={project.name}
-              className="h-48 w-auto mb-6 mr-6 hover:opacity-70 hover:h-52"
+              className="h-48 w-96 mb-6 mr-6 hover:opacity-70 hover:h-52 flex flex-shrink object-cover"
               onClick={() => toggleModal(project, i)}
               key={project.name}
             />

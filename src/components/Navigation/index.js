@@ -15,7 +15,7 @@ function Navigation(props) {
     <header>
       <nav className="bg-white text-black">
         <ul className="flex flex-wrap justify-between align-center list-none mt-6 pb-6 mx-24 font-bold text-4xl font-shalimar">
-          <h1 className="text-5xl font-windsong">
+          <h1 className="text-5xl xs:mb-4 md:mb-0 font-windsong">
             <a
               data-testid="link"
               href="/react-portfolio"
@@ -24,7 +24,8 @@ function Navigation(props) {
               Luc Nguyen
             </a>
           </h1>
-          <li className="ml-80">
+          <div className="xs:pt-2 flex flex-wrap">
+          <li className="mx-6">
             <a
               data-testid="about"
               href="#about"
@@ -34,7 +35,7 @@ function Navigation(props) {
               About Me
             </a>
           </li>
-          <li className="ml-80">
+          <li className="mx-6">
             <a
               data-testid="contact"
               href="#contact"
@@ -44,7 +45,7 @@ function Navigation(props) {
               Contact
             </a>
           </li>
-          <li className="ml-80">
+          <li className="mx-6">
             <a
               data-testid="resume"
               href="#resume"
@@ -54,7 +55,7 @@ function Navigation(props) {
               Resume
             </a>
           </li>
-          <li className="ml-80">
+          <li className="mx-6">
             <a
               data-testid="project"
               href="#project"
@@ -64,6 +65,7 @@ function Navigation(props) {
               Projects
             </a>
           </li>
+          </div>
         </ul>
       </nav>
     </header>

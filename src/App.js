@@ -10,12 +10,12 @@ function App() {
   const [currentComponent, setCurrentComponent] = useState("about");
 
   return (
-    <div className="bg-gray-300 text-black h-full font-sans">
+    <div className="bg-gray-300 text-black sm:h-screen xs:h-max font-sans">
       <Navigation
         setCurrentComponent={setCurrentComponent}
         currentComponent={currentComponent}
       ></Navigation>
-      <main>
+      <main className="bg-gray-300">
         {currentComponent === "about" && <About />}
         {currentComponent === "contact" && <ContactForm />}
         {currentComponent === "resume" && <Resume />}
