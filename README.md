@@ -10,6 +10,7 @@ Personal portfolio created with Create React App.
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Image of Website](#image-of-website)
   - [Credits](#credits)
   - [Licenses](#licenses)
   - [Contributing](#contributing)
@@ -41,6 +42,11 @@ Instructions:
 - If cloning down the code, make sure to download npm packages by typing "npm i" in your terminal. 
 - Run the following command to start the app: "npm start"
 - Application is also deployed through GitHub [lnguyen87.github.io/react-portfolio/ ](https://lnguyen87.github.io/react-portfolio/)
+
+## Image of Website
+
+- Resume Screen
+![image](https://raw.githubusercontent.com/lnguyen87/react-portfolio/main/src/assets/images/react-portfolio-image.jpg.png)
 
 ## Credits
 
