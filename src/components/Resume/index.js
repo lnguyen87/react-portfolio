@@ -13,7 +13,7 @@ function Resume(props) {
         data-testid="h1tag"
         className="text-4xl mb-2 font-bold decoration-orange-400 underline"
       >
-        {capitalizeFirstLetter(category.name)}
+        {capitalizeFirstLetter(category.name)} 
       </h1>
       <a href={pdf}>
         <p className="mb-2 text-2xl">{category.description}</p>
