@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, category, index, githubLink, deployedLink } = currentPhoto;
+const Modal = ({ onClose, currentProject }) => {
+  const { name, description, category, index, githubLink, deployedLink } = currentProject;
 
   return (
     <div className="bg-black/60 bottom-0 left-0 right-0 top-0 overflow-auto fixed z-1">

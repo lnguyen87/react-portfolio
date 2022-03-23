@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 import Modal from '../Modal';
 
-const PhotoList = ({ category }) => {
+const ProjectList = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentPhoto, setCurrentPhoto] = useState();
+    const [currentProject, setCurrentProject] = useState();
   
-    const [photos] = useState([
+    const [category] = useState(    
+      {
+      name: 'project',
+      description: 'Collection of GitHub projects',
+      },
+    );
+
+    const [projects] = useState([
       {
           name: 'Last Minute',
           category: 'project',
@@ -50,31 +58,35 @@ const PhotoList = ({ category }) => {
       }
     ]);
 
-    const currentPhotos = photos.filter(photo => photo.category === category);
 
-    const toggleModal = (image, i) => {
-      setCurrentPhoto({ ...image, index: i });
+    const toggleModal = (project, i) => {
+      setCurrentProject({ ...project, index: i });
       setIsModalOpen(!isModalOpen);
     };
   
     return (
+      <section className="mt-10 ml-24 text-black">
+            <h1 data-testid="h1tag" className="text-4xl mb-2 font-bold decoration-orange-400 underline">{capitalizeFirstLetter(category.name)}</h1>
+            <p className="mb-2 text-2xl">{category.description}</p>
+      
       <div>
         {isModalOpen && (
-          <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
+          <Modal onClose={toggleModal} currentProject={currentProject} />
         )}
         <div className="flex flex-row flex-wrap">
-          {currentPhotos.map((image, i) => (
+          {projects.map((project, i) => (
             <img
-              src={require(`../../assets/images/${category}/${i}.jpg`)}
-              alt={image.name}
+              src={require(`../../assets/images/${project.category}/${i}.jpg`)}
+              alt={project.name}
               className="h-48 w-auto mb-6 mr-6 hover:opacity-70 hover:h-52"
-              onClick={() => toggleModal(image, i)}
-              key={image.name}
+              onClick={() => toggleModal(project, i)}
+              key={project.name}
             />
           ))}
         </div>
       </div>
+      </section>
     );
   };
   
-  export default PhotoList;
+  export default ProjectList;
