@@ -15,7 +15,7 @@ function Resume(props) {
       >
         {capitalizeFirstLetter(category.name)} 
       </h1>
-      <a href={pdf}>
+      <a href={pdf} target="_blank" rel="noreferrer">
         <p className="mb-2 text-2xl">{category.description}</p>
       </a>
     </section>
