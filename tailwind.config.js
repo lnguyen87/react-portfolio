@@ -7,6 +7,13 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 2s linear infinite',
         'pulse-slow': 'pulse 2s ease-in-out infinite',
+        'wiggle': 'wiggle 1s ease-in-out infinite',
+      },
+      keyframes: {
+          wiggle: {
+            '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+          }
       },
       padding: {
         '28rem' : '28rem',

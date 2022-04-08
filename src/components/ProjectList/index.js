@@ -15,6 +15,13 @@ const ProjectList = () => {
 
     const [projects] = useState([
       {
+        name: 'WorthIt',
+        category: 'project',
+        description: 'An app to determine if a gig is worth it or not',
+        githubLink: 'https://github.com/lnguyen87/worthIt',
+        deployedLink: 'https://worth-it-2022.herokuapp.com/',
+      },
+      {
           name: 'Last Minute',
           category: 'project',
           description: 'Date night event planner',
@@ -78,7 +85,7 @@ const ProjectList = () => {
             <img
               src={require(`../../assets/images/${project.category}/${i}.jpg`)}
               alt={project.name}
-              className="h-48 w-96 mb-6 mr-6 hover:opacity-70 hover:h-52 flex flex-shrink object-cover"
+              className="h-48 w-96 mb-6 mr-6 hover:opacity-70 hover:h-52 flex flex-shrink object-contain"
               onClick={() => toggleModal(project, i)}
               key={project.name}
             />

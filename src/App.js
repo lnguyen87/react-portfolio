@@ -10,7 +10,7 @@ function App() {
   const [currentComponent, setCurrentComponent] = useState("about");
 
   return (
-    <div className="bg-gray-300 text-black sm:h-screen xs:h-max font-sans">
+    <div className="bg-gray-300 text-black h-screen xs:h-max font-sans">
       <Navigation
         setCurrentComponent={setCurrentComponent}
         currentComponent={currentComponent}
