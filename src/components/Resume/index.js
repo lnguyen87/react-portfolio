@@ -42,14 +42,19 @@ function Resume(props) {
             Bachelor of Science, Operations Management
           </h3>
           <h4 className="text-xs italic">Graduation Date: 2015</h4>
-          <ul className="list-disc mt-4 break-words">
-            <li>3.48 GPA</li>
-            <li>Dean’s List – 2011, 2012, 2013, 2015</li>
-            <li>
-              Director of Community Relations and Development - University of
-              Utah Ethics Club
-            </li>
-          </ul>
+
+          <h2 className="font-bold text-lg mt-3">
+            University of Utah Coding Bootcamp: Full Stack Developer
+          </h2>
+          <h3 className="text-gray-600">
+            <a
+              href="https://www.credly.com/badges/d67eea2a-417c-4623-96b9-37ce2514c1e2"
+              className="hover:text-blue-600"
+            >
+              Click here to verify certificate
+            </a>
+          </h3>
+          <h4 className="text-xs italic">Certificate of Completion: 2022</h4>
         </div>
       </div>
       <a
@@ -58,7 +63,7 @@ function Resume(props) {
         rel="noreferrer"
         className="justify-center flex xs:pt-6"
       >
-        <button className="xs:mt-6 text-sm shadow-xl bg-orange-600 border-2 hover:bg-orange-700 hover:text-gray-100 border-black font-bold rounded-md p-1 px-2">
+        <button className="xs:mt-6 text-lg shadow-xl bg-orange-600 border-2 hover:bg-orange-700 hover:text-gray-100 text-white border-black font-bold rounded-md p-1 px-2">
           View Resume
         </button>
       </a>
