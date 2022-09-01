@@ -13,7 +13,7 @@ function Navigation(props) {
       <nav className="bg-white text-black">
         <ul className="flex flex-wrap justify-between align-center list-none mt-6 pb-6 mx-24 font-bold text-4xl font-shalimar">
           <h1 className="text-5xl xs:mb-4 md:mb-0 font-windsong">
-            <a data-testid="link" href="#home" className="hover:opacity-60">
+            <a data-testid="link" href="#about" className="hover:opacity-60">
               Luc Nguyen
             </a>
           </h1>
